@@ -1,0 +1,168 @@
+<section class="elementor-element elementor-element-4c77f42 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="4c77f42" data-element_type="section">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-row">
+            <div class="elementor-element elementor-element-b3414a7 elementor-column elementor-col-100 elementor-top-column" data-id="b3414a7" data-element_type="column">
+                <div class="elementor-column-wrap  elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-b6b1a9d elementor-widget elementor-widget-progression-review-post-list" data-id="b6b1a9d" data-element_type="widget" data-widget_type="progression-review-post-list.default">
+                            <div class="elementor-widget-container">
+                                <div class="progression-studios-elementor-review-container">
+
+                                    <div class="progression-masonry-margins">
+                                        <div id="progression-review-index-masonry-b6b1a9d">
+
+                                            {% for movie in movies %} <!-- TODO: Davidgh: Should be updated from database -->
+                                            <div class="progression-masonry-item gaming">
+                                                <div class="progression-masonry-padding-blog">
+                                                    <div class="progression-studios-isotope-animation">
+                                                        <div id="post-127" class="post-127 post type-post status-publish format-standard has-post-thumbnail hentry category-gaming">
+                                                            <div class="progression-studios-default-blog-overlay  ">
+                                                                <div class="overlay-blog-meta-category-list">
+                                                                    <a href="https://ratency.progressionstudios.com/category/gaming/" rel="category tag">{{ movie.genre }}</a>
+                                                                </div>
+                                                                <a href="https://ratency.progressionstudios.com/2018/01/best-mobile-phone-game/">
+                                                                    <div class="overlay-progression-studios-blog-image" style="background-image:url('{{ movie.img_url }}')"></div>
+                                                                    <div class="overlay-progression-blog-content">
+                                                                        <div class="overlay-progression-blog-content-table-cell">
+                                                                            <div class="overlay-progression-blog-content-padding">
+                                                                                <div class="progression-studios-hexagon-index-container">
+                                                                                    <div class="progression-studios-index-hexagon-border"><div class="progression-blog-review-index-total">{{ movie.rating }}</div></div>
+                                                                                </div>
+                                                                                <h2 class="overlay-progression-blog-title">{{ movie.name }}</h2>
+                                                                                <ul class="progression-studio-overlay-post-meta">
+                                                                                    <li class="blog-meta-date-list">{{ movie.release_date }}</li>
+                                                                                </ul><!-- close .overlay-progression-blog-title -->
+                                                                                <div class="clearfix-pro"></div>
+                                                                            </div><!-- close .overlay-progression-blog-content-padding -->
+                                                                        </div><!-- close .overlay-progression-blog-content-table-cell -->
+                                                                    </div><!-- close .overlay-progression-blog-content -->
+                                                                    <div class="overlay-blog-gradient"></div>
+                                                                </a>
+                                                                <div class="clearfix-pro"></div>
+                                                            </div><!-- close .progression-studios-default-blog-overlay -->
+                                                        </div><!-- #post-## -->
+                                                    </div><!-- close .progression-studios-isotope-animation -->
+                                                </div><!-- close .progression-masonry-padding-blog -->
+                                            </div><!-- close .progression-masonry-item -->
+                                            {% endfor %}
+
+                                        </div><!-- close #progression-review-index-masonry-b6b1a9d  -->
+                                    </div><!-- close .progression-masonry-margins -->
+
+                                    <div class="clearfix-pro"></div>
+                                    <div id="progression-load-more-manual">
+                                        <ul class="page-numbers">
+                                            {% if movies.has_previous %}
+                                            <li><a class="page-numbers" href="/">&laquo; first</a></li>
+                                            <li><a class="page-numbers" href="?page={{ movies.previous_page_number }}">previous</a></li>
+                                            {% endif %}
+                                                    <span class="current">
+                                                        Page {{ movies.number }} of {{ movies.paginator.num_pages }}
+                                                    </span>
+                                            <!--
+                                            <li><span aria-current="page" class="page-numbers current">1</span></li>
+
+                                            <li><a class="page-numbers" href="/page/2/">2</a></li>
+                                            <li><a class="page-numbers" href="/page/3/">3</a></li>
+                                            <li><a class="page-numbers" href="/page/4/">4</a></li>
+                                            <li><a class="page-numbers" href="/page/5/">5</a></li>
+                                             -->
+                                            {% if movies.has_next %}
+                                            <li><a class="page-numbers" href="?page={{ movies.next_page_number }}">Next</a></li>
+                                            <li><a class="page-numbers" href="?page={{ movies.paginator.num_pages }}">Last ›</a></li>
+                                            {% endif %}
+                                        </ul>
+                                    </div>
+                                </div><!-- close .progression-studios-elementor-review-container -->
+                                <div class="clearfix-pro"></div>
+
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function($) {
+                                        'use strict';
+                                        /* Default Isotope Load Code */
+                                        var $containerb6b1a9d = $("#progression-review-index-masonry-b6b1a9d").isotope();
+                                        $containerb6b1a9d.imagesLoaded( function() {
+                                            $(".progression-masonry-item").addClass("opacity-progression");
+                                            $containerb6b1a9d.isotope({
+                                                itemSelector: "#progression-review-index-masonry-b6b1a9d .progression-masonry-item",
+                                                percentPosition: true,
+                                                layoutMode: "fitRows"
+                                            });
+                                        });
+                                        /* END Default Isotope Code */
+
+                                        /* Begin Infinite Scroll */
+                                        $containerb6b1a9d.infinitescroll({
+                                        errorCallback: function(){  $("#infinite-nav-pro-b6b1a9d").delay(500).fadeOut(500, function(){ $(this).remove(); }); },
+                                          navSelector  : "#infinite-nav-pro-b6b1a9d",
+                                          nextSelector : "#infinite-nav-pro-b6b1a9d .nav-previous a",
+                                          itemSelector : "#progression-review-index-masonry-b6b1a9d .progression-masonry-item",
+                                            loading: {
+                                                img: "https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/images/loader.gif",
+                                                 msgText: "",
+                                                finishedMsg: "<div id='no-more-posts'></div>",
+                                                speed: 0, }
+                                          },
+                                          // trigger Isotope as a callback
+                                          function( newElements ) {
+
+                                             $(".progression-studios-gallery").flexslider({
+                                                animation: "fade",
+                                                slideDirection: "horizontal",
+                                                slideshow: false,
+                                                smoothHeight: false,
+                                                slideshowSpeed: 7000,
+                                                animationSpeed: 1000,
+                                                directionNav: true,
+                                                controlNav: true,
+                                                prevText: "",
+                                                nextText: "",
+                                             });
+
+                                                $(".progression-studios-default-blog-overlay a[data-rel^=\'prettyPhoto\'], .progression-studios-feaured-image a[data-rel^=\'prettyPhoto\']").prettyPhoto({
+                                                    theme: "pp_default",
+                                                        hook: "data-rel",
+                                                    opacity: 0.7,
+                                                        show_title: false,
+                                                        deeplinking: false,
+                                                        overlay_gallery: false,
+                                                        custom_markup: "",
+                                                    default_width: 1100,
+                                                    default_height: 619,
+                                                    social_tools:""
+                                                });
+
+                                                $(".progression-studios-default-blog-overlay, .progression-studios-default-blog-index").fitVids();
+
+                                            var $newElems = $( newElements );
+
+                                                $newElems.imagesLoaded(function(){
+
+                                                $containerb6b1a9d.isotope( "appended", $newElems );
+                                                $(".progression-masonry-item").addClass("opacity-progression");
+
+                                            });
+
+                                          }
+                                        );
+                                        /* END Infinite Scroll */
+
+                                        /* PAUSE FOR LOAD MORE */
+                                        $(window).unbind(".infscr");
+                                        // Resume Infinite Scroll
+                                        $("#infinite-nav-pro-b6b1a9d .nav-previous a").click(function(){
+                                            $containerb6b1a9d.infinitescroll("retrieve");
+                                            return false;
+                                        });
+                                        /* End Infinite Scroll */
+
+                                        });
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

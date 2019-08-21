@@ -1,0 +1,122 @@
+<section class="elementor-element elementor-element-971d9e5 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="971d9e5" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-no">
+        <div class="elementor-row">
+            <div class="elementor-element elementor-element-42897d3 elementor-column elementor-col-100 elementor-top-column" data-id="42897d3" data-element_type="column">
+                <div class="elementor-column-wrap  elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                        <div class="elementor-element elementor-element-8550408 elementor-widget elementor-widget-progression-studios-review-slider" data-id="8550408" data-element_type="widget" data-widget_type="progression-studios-review-slider.default">
+                            <div class="elementor-widget-container">
+                                <div class="progression-studios-post-slider-main progression_elements_slider_arrow_visiblity_tablet_mobile progression_elements_slider_dots_visiblity_tablet_mobile">
+                                    <div id="progression-elements-progression-flexslider-8550408" class="flexslider">
+
+                                        <ul class="slides">
+
+                                            {% for movie in movies %}
+                                            <li class="progression_animate_up">
+                                                <div class="progression-elements-slider-background" style="background-image:url('{{ movie.img_url }}')">
+                                                    <div class="progression-ratency-slider-elements-display-table">
+                                                        <div class="progression-ratency-slider-text-floating-container">
+                                                            <div class="progression-ratency-slider-container-max-width">
+                                                                <div class="progression-ratency-slider-content-floating-container">
+                                                                    <div class="progression-ratency-slider-content-max-width">
+                                                                        <div class="progression-ratency-slider-content-margins">
+                                                                            <div class="progression-ratency-slider-content-alignment">
+                                                                                <div class="progression-ratency-slider-progression-crowd-index-content">
+                                                                                    <div class="progression-ratency-slider-hexagon-container">
+                                                                                        <div class="progression-ratency-slider-hexagon-border">
+                                                                                            <div class="progression-ratency-slider-review-total">{{ movie.rating }}</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="progression-ratency-slider-categories">
+                                                                                        <a href="https://ratency.progressionstudios.com/category/technology/" rel="category tag">Trailer</a>
+                                                                                        <a href="https://ratency.progressionstudios.com/category/technology/" rel="category tag">Movie</a>
+                                                                                    </div>
+                                                                                    <a href="https://ratency.progressionstudios.com/2018/01/best-iphone-camera-app/">
+                                                                                        <h2 class="progression-ratency-progression-slider-title">{{ movie.name }}</h2>
+                                                                                        <div class="progression-ratency-slider-excerpt">
+                                                                                            <p>{{ movie.description }}</p>
+                                                                                        </div><!-- close .overlay-progression-studios-excerpt -->
+                                                                                    </a>
+                                                                                    <div class="clearfix-pro"></div>
+                                                                                </div><!-- close .progression-ratency-slider-progression-crowd-index-content -->
+                                                                            </div><!-- close .progression-ratency-slider-content-alignment -->
+                                                                            <div class="clearfix-pro"></div>
+                                                                        </div>
+                                                                    </div><!-- close .progression-ratency-slider-content-max-width -->
+                                                                </div><!-- close .progression-ratency-slider-content-floating-container -->
+                                                            </div><!-- close .progression-ratency-slider-container-max-width -->
+                                                        </div><!-- close .progression-ratency-slider-text-floating-container -->
+                                                    </div><!-- close .progression-ratency-slider-elements-display-table -->
+                                                    <div class="slider-background-overlay-color"></div>
+                                                    <div class="clearfix-pro"></div>
+                                                </div><!-- close .progression-elements-slider-background -->
+                                            </li>
+                                            {% endfor %}
+
+                                        </ul>
+                                    </div><!-- #-elements-progression-flexslider-8550408 -->
+                                </div><!-- close .progression-studios-post-slider-main -->
+
+                                <div class="progression-ratency-slider-thumbnail-position">
+                                    <div class="progression-ratency-slider-thumbnails-display-table">
+                                        <div class="progression-studios-post-slider-thumbnails">
+                                            <div id="progression-elements-progression-flexslider-carousel-8550408" class="flexslider">
+                                                <ul class="slides">
+
+                                                    {% for movie in movies %}
+                                                    <li class="noselect">
+                                                        <div class="progression-ratency-slider-thumb-container">
+                                                            <div class="progression-ratency-slider-thumb-image">
+                                                                <img width="300" height="200" src="{{ movie.img_url }}" class="attachment-progression-studios-slider-thumb size-progression-studios-slider-thumb wp-post-image" alt="" srcset="https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-300x200.jpg 300w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-768x513.jpg 768w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-1024x684.jpg 1024w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-900x601.jpg 900w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242.jpg 1400w " sizes="(max-width: 300px) 100vw, 300px" />
+                                                                <div class="progression-ratency-slider-thumb-review"></div>
+                                                            </div>
+                                                            <div class="progression-ratency-slider-thumb-caption">
+                                                                <h2>{{ movie.name }}</h2>
+                                                                <ul class="progression-ratency-slider-thumb-meta">
+                                                                    <li class="blog-meta-author-display">By {{ movie.director }}</li>
+                                                                </ul><!-- close .overlay-progression-blog-title -->
+                                                                <div class="clearfix-pro"></div>
+                                                            </div>
+                                                            <div class="progression-ratency-slider-thumb-gradient"></div>
+                                                            <div class="clearfix-pro"></div>
+                                                        </div>
+                                                    </li>
+                                                    {% endfor %}
+
+                                                </ul>
+                                            </div><!-- close #progression-elements-progression-flexslider-carousel-8550408 -->
+                                        </div><!-- close .progression-studios-post-slider-thumbnails -->
+                                    </div><!-- close .progression-ratency-slider-thumbnails-display-table -->
+                                </div>
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function($) {
+                                        'use strict';
+                                          $('#progression-elements-progression-flexslider-carousel-8550408').flexslider({
+                                            animationDuration: 200,
+                                            controlNav: false,
+                                            animationLoop: false,
+                                            directionNav: false,
+                                            itemWidth:600,
+                                            itemMargin: 0,
+                                            asNavFor: '#progression-elements-progression-flexslider-8550408',
+                                      });
+
+                                      $('#progression-elements-progression-flexslider-8550408').flexslider({
+                                            prevText: "",
+                                            nextText: "",
+                                            slideshow:true,
+                                            slideshowSpeed: 4500,
+                                            animation: "fade",
+                                            animationSpeed: 400,
+                                            pauseOnHover: true,
+                                            sync: "#progression-elements-progression-flexslider-carousel-8550408" });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

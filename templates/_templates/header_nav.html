@@ -1,0 +1,89 @@
+<div id="logo-nav-pro">
+    <div id="progression-studios-nav-bg">
+        <div class="width-container-pro optional-centered-area-on-mobile">
+            <div class="mobile-menu-icon-pro noselect"><i class="fa fa-bars"></i><span class="progression-mobile-menu-text">Menu</span></div>
+            <div id="progression-nav-container">
+                <nav id="site-navigation" class="main-navigation noselect">
+                    <div class="menu-main-navigation-container">
+                        <ul id="menu-main-navigation" class="sf-menu">
+                            <li class="normal-item-pro  menu-item menu-item-type-post_type menu-item-object-page menu-item-home {% if request.path == '/' %} current-menu-item{% endif %} page_item page-item-5 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-43">
+                                <a href="/">
+                                    <span class="progression-studios-menu-title">Home</span>
+                                </a>
+                            </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-226">
+                                <a href="#!"><span class="progression-studios-menu-title">Genres</span></a>
+                                <ul class='sf-mega'>
+
+                                    <li class=" sf-mega-section columns-pro-4 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-227">
+                                        <h2 class='mega-menu-heading'></h2>
+                                        <ul class="deep-level">
+                                            {% for genre in genres|slice:":9" %}
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="/movies/{{genre.id}}/"><span class="progression-studios-menu-title">{{genre.name}}</span></a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                    <li class=" sf-mega-section columns-pro-4 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-228">
+                                        <h2 class='mega-menu-heading'></h2>
+                                        <ul class="deep-level">
+                                            {% for genre in genres|slice:"9:18" %}
+                                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-255"><a href="/movies/{{genre.id}}/"><span class="progression-studios-menu-title">{{genre.name}}</span></a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                    <li class=" sf-mega-section columns-pro-4 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-229">
+                                        <h2 class='mega-menu-heading'></h2>
+                                        <ul class="deep-level">
+                                            {% for genre in genres|slice:"18:27" %}
+                                            <li class=" menu-item menu-item-type-post_type menu-item-object-post menu-item-271"><a href="/movies/{{genre.id}}/"><span class="progression-studios-menu-title">{{genre.name}}</span></a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                    <li class=" sf-mega-section columns-pro-4 menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-230">
+                                        <h2 class='mega-menu-heading'></h2>
+                                        <ul class="deep-level">
+                                            {% for genre in genres|slice:"27:40" %}
+                                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-239"><a href="/movies/{{genre.id}}/"><span class="progression-studios-menu-title">{{genre.name}}</span></a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                </ul>
+                            <div style='clear:both;'></div>
+                        </li>
+                        <li class="normal-item-pro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49 {% if request.path == '/tv_series/' %} current-menu-item {% endif %}"><a href="/tv_series"><span class="progression-studios-menu-title">TV Series</span></a></li>
+                        <li class="normal-item-pro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50 {% if request.path == '/top_watched/' %} current-menu-item {% endif %}"><a href="/top_watched"><span class="progression-studios-menu-title">Top Watched</span></a></li>
+                        <li class="normal-item-pro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54 {% if request.path == '/top_imdb/' %} current-menu-item {% endif %}"><a href="/top_imdb"><span class="progression-studios-menu-title">Top IMDB</span></a></li>
+                        <li class="normal-item-pro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42 {% if request.path == '/contact/' %} current-menu-item {% endif %}"><a href="/contact"><span class="progression-studios-menu-title">Contact</span></a></li>
+                    </ul>
+                    </div>
+                    <div class="clearfix-pro"></div>
+                </nav>
+                <div class="clearfix-pro"></div>
+            </div><!-- close #progression-nav-container -->
+            <div class="clearfix-pro"></div>
+        </div><!-- close .width-container-pro -->
+    </div><!-- close #progression-studios-nav-bg -->
+</div><!-- close #logo-nav-pro -->
+<div id="main-nav-mobile">
+    <div class="menu-main-navigation-container">
+        <ul id="menu-main-navigation-1" class="mobile-menu-pro">
+            <li class="normal-item-pro  menu-item menu-item-type-post_type menu-item-object-page menu-item-home {% if request.path == '/' %} current-menu-item {% endif %} page_item page-item-5 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-43">
+                <a href="/"><span class="progression-studios-menu-title">Home</span></a>
+            </li>
+            <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-226"><a href="#!"><span class="progression-studios-menu-title">Genres</span></a>
+                <ul class='sf-mega'>
+                    {% for genre in genres %}
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="/movies/{{genre.id}}/"><span class="progression-studios-menu-title">{{genre.name}}</span></a></li>
+                    {% endfor %}
+                </ul>
+                <div style='clear:both;'></div>
+            </li>
+            <li class="normal-item-pro  menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49 {% if request.path == '/tv_series/' %} current-menu-item {% endif %}"><a href="/tv_series"><span class="progression-studios-menu-title">TV Series</span></a></li>
+            <li class="normal-item-pro  menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50 {% if request.path == '/top_watched/' %} current-menu-item {% endif %}"><a href="/top_watched"><span class="progression-studios-menu-title">Top Watched</span></a></li>
+            <li class="normal-item-pro  menu-item menu-item-type-taxonomy menu-item-object-category menu-item-54 {% if request.path == '/top_imdb/' %} current-menu-item {% endif %}"><a href="/top_imdb"><span class="progression-studios-menu-title">Top IMDB</span></a></li>
+            <li class="normal-item-pro  menu-item menu-item-type-post_type menu-item-object-page menu-item-42 {% if request.path == '/contact/' %} current-menu-item {% endif %}"><a href="/contact"><span class="progression-studios-menu-title">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="sidebar progression-studios-mobile-sidebar"></div>
+    <div class="clearfix-pro"></div>
+</div><!-- close #mobile-menu-container -->

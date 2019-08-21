@@ -1,0 +1,869 @@
+<!doctype html>
+<!--
+	TODO: Link to Movies = https://ww1.123movies.domains/allmovies
+-->
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Home" />
+	<meta property="og:site_name" content="Ratency" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://ratency.progressionstudios.com/xmlrpc.php" />
+
+    <title>Movies {% block title %}Page Title{% endblock %}</title>
+
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel="alternate" type="application/rss+xml" title="Ratency &raquo; Feed" href="https://ratency.progressionstudios.com/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Ratency &raquo; Comments Feed" href="https://ratency.progressionstudios.com/comments/feed/" />
+	<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ratency.progressionstudios.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+	</script>
+	<style type="text/css">
+	img.wp-smiley,
+	img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 .07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+	</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='contact-form-7-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.3' type='text/css' media='all' />
+	<link rel='stylesheet' id='dashicons-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-includes/css/dashicons.min.css?ver=5.2.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='post-views-counter-frontend-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/post-views-counter/css/frontend.css?ver=1.3.1' type='text/css' media='all' />
+	<link rel='stylesheet' id='ratency-progression-style-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/style.css?ver=5.2.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='ratency-progression-google-fonts-css'  href='//fonts.googleapis.com/css?family=Fira+Sans+Condensed%3A400%2C500%2C700%7CShare%3A700%2C400i%7CNoto+Sans%3A400%2C700%7C%26subset%3Dlatin&#038;ver=1.0.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='progression-studios-custom-style-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/css/progression_studios_custom_styles.css?ver=5.2.2' type='text/css' media='all' />
+	<style id='progression-studios-custom-style-inline-css' type='text/css'>
+		body #logo-pro img {
+			width:160px;
+			padding-top:35px;
+			padding-bottom:32px;
+		}
+		#logo-footer img {width:160px;}
+		.woocommerce-shop-single .summary .star-rating:before, .woocommerce-shop-single .woocommerce-product-rating .star-rating:before, #boxed-layout-pro #content-pro p.stars, #boxed-layout-pro #content-pro p.stars a, #boxed-layout-pro #content-pro p.stars a:hover, #boxed-layout-pro #content-pro .star-rating, #boxed-layout-pro ul.products li.product .star-rating, #boxed-layout-pro ul.products li.product .star-rating:before {
+			color:#06d79c;
+		}
+		a, .woocommerce-shop-single .product_meta a:hover, .woocommerce-shop-single .woocommerce-product-rating a.woocommerce-review-link:hover {
+			color:#5c39f2;
+		}
+		a:hover {
+			color:#9177ff;
+		}
+		#ratency-progression-header-top .sf-mega, header ul .sf-mega {
+			width:100%;
+			left:0px;
+			margin-left:0;
+		}
+		body .elementor-section.elementor-section-boxed > .elementor-container {max-width:1200px;}
+		.width-container-pro {  width:1200px; }
+
+			 body.progression-studios-header-sidebar-before #progression-inline-icons .progression-studios-social-icons, body.progression-studios-header-sidebar-before:before, header#masthead-pro { background-color:#1e023d;
+		}
+
+			 #progression-studios-nav-bg { background-color:#5c39f2;
+		}
+		body.progression-studios-header-sidebar-before #progression-inline-icons .progression-studios-social-icons, body.progression-studios-header-sidebar-before:before, header#masthead-pro {
+
+			background-repeat: no-repeat; background-position:center center; background-size: cover;
+		}
+		#masthead-pro .search-form {padding-top:32px; }
+		body {
+			background-color:#ffffff;
+
+			background-repeat: no-repeat; background-position:center center; background-size: cover; background-attachment: fixed;
+		}
+		#page-title-pro {
+			background-color:#210000;
+			padding-top:150px;
+			padding-bottom:150px;
+			background-image:url(https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/page-title.jpg);
+			background-repeat: no-repeat; background-position:center center; background-size: cover;
+		}
+		#progression-studios-post-page-title {
+			background-color:#210000;
+			background-image:url(https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/page-title.jpg);
+			background-repeat: no-repeat; background-position:center center; background-size: cover;
+			padding-top:130px;
+			padding-bottom:125px;
+		}
+		#progression-studios-post-page-title:before, #page-title-pro:before {
+				background: -moz-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.65) 100%);
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.65) 100%);
+				background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.65) 100%);
+			}
+
+		.sidebar h4.widget-title:before { background-color:#5c39f2; }
+		.sidebar ul ul, .sidebar ul li, .widget .widget_shopping_cart_content p.buttons { border-color:#ebebeb; }
+		ul.progression-studios-header-social-icons li a {
+			margin-top:34px;
+			background:rgba(255,255,255,  0.12);
+			color:rgba(255,255,255,  0.85);
+		}
+		ul.progression-studios-header-social-icons li a:hover {
+			background:rgba(255,255,255,  0.2);
+			color:#ffffff;
+		}
+		/* START BLOG STYLES */
+		ul.progression-author-icons {background:#e51947;}
+		.progression-blog-review-content {border-color:rgba(0,0,0,0.1);}
+		.progression-studios-hexagon-border { background-color: #5c39f2;   }
+		.progression-studios-hexagon-border:before { border-bottom-color: #5c39f2; }
+		.progression-studios-hexagon-border:after { border-top-color:#5c39f2; }
+
+		.progression-blog-review-content .progression-blog-review-total { background-color: #2b0f4a;  }
+		.progression-blog-review-content .progression-blog-review-total:before {border-bottom-color: #2b0f4a; }
+		.progression-blog-review-content .progression-blog-review-total:after {border-top-color:#2b0f4a; }
+		#page-title-pro.page-title-pro-post-page {
+
+
+			background-repeat: no-repeat; background-position:center center; background-size: cover;
+		}
+		.progression-studios-default-blog-top .blog-post-vertical-content-layout,
+		.progression-blog-content {
+			border-color:rgba(17,17,17,0.10);
+		}
+		.progression-studios-default-blog-overlay, .overlay-progression-blog-content {
+			min-height:400px;
+		}
+
+		.progression-studios-feaured-video-overlay, .progression-studios-default-blog-overlay .progression-studios-feaured-image {background:#000000;}
+		.progression-blog-review-index-total { background-color: #2b0f4a;}
+		.progression-blog-review-index-total:before {border-bottom-color: #2b0f4a; }
+		.progression-blog-review-index-total:after {border-top-color:#2b0f4a; }
+		.progression-studios-default-blog-overlay:hover .overlay-progression-studios-blog-image,.progression-studios-default-blog-overlay:hover a img, .progression-studios-feaured-image:hover a img { opacity:1;}
+		h2.progression-blog-title a {color:#5c39f2;}
+		h2.progression-blog-title a:hover {color:#1e023d;}
+		/* END BLOG STYLES */
+
+		/* START SHOP STYLES */
+		.progression-studios-shop-index-content {
+			background: #ffffff;
+			border-color:rgba(0,0,0,0.09);
+		}
+
+		ul.products li.product .progression-studios-shop-index-content .star-rating {display:none;}
+		/* END SHOP STYLES */
+
+		/* START BUTTON STYLES */
+		.infinite-nav-pro a:hover {
+			color:#ffffff;
+			background:#5c39f2;
+			border-color:#5c39f2;
+		}
+		.wpneo-fields input[type='number'], .wpneo-fields input[type='text'], .wpneo-fields input[type='email'], .wpneo-fields input[type='password'],  .wpneo-fields textarea, .campaign_update_field_copy  input, .campaign_update_field_copy  textarea, #campaign_update_addon_field input, #campaign_update_addon_field textarea,
+		.woocommerce input, #content-pro .woocommerce table.shop_table .coupon input#coupon_code, #content-pro .woocommerce table.shop_table input, form.checkout.woocommerce-checkout textarea.input-text, form.checkout.woocommerce-checkout input.input-text,
+		.post-password-form input, .search-form input.search-field, .wpcf7 select, #respond textarea, #respond input, .wpcf7-form input, .wpcf7-form textarea {
+			background-color:#ffffff;
+			border-color:rgba(0,0,0,0.13);
+		}
+		.wpneo-fields input[type='text'], .wpneo-fields input[type='email'], .wpneo-fields input[type='password'],  .wpneo-fields textarea {
+			border-color:rgba(0,0,0,0.13) !important;
+		}
+		.wp-block-button a.wp-block-button__link,
+		#reward_options input.button,
+		.helpmeout-registration-page .wpneo-user-registration-wrap #wpneo-registration .wpneo-single input#user-registration-btn,
+		.woocommerce form input.button,
+		.woocommerce form input.woocommerce-Button,
+		button.wpneo_donate_button,
+		#boxed-layout-pro .progression-woocommerce-product-short-summary button.button,
+		#boxed-layout-pro .progression-woocommerce-product-short-summary a.button,
+		.post-password-form input[type=submit], #respond input.submit, .wpcf7-form input.wpcf7-submit {
+			font-size:15px;
+		}
+		.helpmeout-rewards-select_button button.select_rewards_button,
+		#boxed-layout-pro .woocommerce .shop_table input.button, #boxed-layout-pro .form-submit input#submit, #boxed-layout-pro #customer_login input.button, #boxed-layout-pro .woocommerce-checkout-payment input.button, #boxed-layout-pro button.button, #boxed-layout-pro a.button  {
+			font-size:15px;
+		}
+		.wp-block-button a.wp-block-button__link,
+		.progression-page-nav span, .progression-page-nav a, #content-pro ul.page-numbers li span.current, #content-pro ul.page-numbers li a {
+			border-radius:0px;
+		}
+		#reward_options input.button,
+		#wpneo-registration input#user-registration-btn,
+		#campaign_update_addon_field input.removecampaignupdate, button#wpneo-update-save, input#addcampaignupdate,
+		button#cc-image-upload-file-button,
+		input.wpneo-submit-campaign, input#wpneo_active_edit_form, .wpneo-buttons-group button#wpneo-edit, .wpneo-buttons-group button#wpneo-dashboard-btn-cancel, .wpneo-buttons-group button#wpneo-password-save, .wpneo-buttons-group button#wpneo-dashboard-save, .wpneo-buttons-group button#wpneo-contact-save, .wpneo-buttons-group button#wpneo-profile-save, button.wpneo_donate_button,
+		.woocommerce input, #content-pro .woocommerce table.shop_table .coupon input#coupon_code, #content-pro .woocommerce table.shop_table input, form.checkout.woocommerce-checkout textarea.input-text, form.checkout.woocommerce-checkout input.input-text,
+		#progression-checkout-basket a.cart-button-header-cart, .search-form input.search-field, .wpcf7 select, .post-password-form input, #respond textarea, #respond input, .wpcf7-form input, .wpcf7-form textarea {
+			border-radius:0px;
+		}
+		#helpmeeout-login-form:before {
+			border-bottom: 8px solid #5c39f2;
+		}
+		#helpmeeout-login-form,
+		.product #campaign_loved_html,
+		ul.wpneo-crowdfunding-update li:hover span.round-circle,
+		.tags-progression a:hover,
+		.progression-page-nav a:hover, .progression-page-nav span, #content-pro ul.page-numbers li a:hover, #content-pro ul.page-numbers li span.current {
+			color:#ffffff;
+			background:#5c39f2;
+		}
+		#progression-checkout-basket a.cart-button-header-cart, .flex-direction-nav a:hover, #boxed-layout-pro .woocommerce-shop-single .summary button.button,
+		#boxed-layout-pro .woocommerce-shop-single .summary a.button,
+		.mc4wp-form input[type='submit'] {
+			color:#ffffff;
+			background:#5c39f2;
+		}
+		.wp-block-button a.wp-block-button__link,
+		.helpmeout-registration-page .wpneo-user-registration-wrap #wpneo-registration .wpneo-single input#user-registration-btn,
+		input.wpneo-submit-campaign,
+		#wpneo-registration input#user-registration-btn,
+		.woocommerce form input.button,
+		.woocommerce form input.woocommerce-Button,
+		.helpmeout-rewards-select_button button.select_rewards_button,
+		button.wpneo_donate_button,
+		.sidebar ul.progression-studios-social-widget li a,
+		footer#site-footer .tagcloud a, .tagcloud a, body .woocommerce nav.woocommerce-MyAccount-navigation li.is-active a,
+		.post-password-form input[type=submit], #respond input.submit, .wpcf7-form input.wpcf7-submit,
+		#boxed-layout-pro .woocommerce .shop_table input.button, #boxed-layout-pro .form-submit input#submit, #boxed-layout-pro #customer_login input.button, #boxed-layout-pro .woocommerce-checkout-payment input.button, #boxed-layout-pro button.button, #boxed-layout-pro a.button {
+			color:#ffffff;
+			background:#5c39f2;
+			border-radius:0px;
+			letter-spacing:0.03em;
+		}
+		.mobile-menu-icon-pro span.progression-mobile-menu-text,
+		#boxed-layout-pro .woocommerce-shop-single .summary button.button,
+		#boxed-layout-pro .woocommerce-shop-single .summary a.button {
+			letter-spacing:0.03em;
+		}
+		body .woocommerce nav.woocommerce-MyAccount-navigation li.is-active a {
+		border-radius:0px;
+		}
+		.wpneo-fields input[type='number']:focus, #wpneofrontenddata .wpneo-fields select:focus, .campaign_update_field_copy  input:focus, .campaign_update_field_copy  textarea:focus, #campaign_update_addon_field input:focus, #campaign_update_addon_field textarea:focus, .wpneo-fields input[type='text']:focus, .wpneo-fields input[type='email']:focus, .wpneo-fields input[type='password']:focus,  .wpneo-fields textarea:focus {
+			border-color:#5c39f2 !important;
+		}
+		.dashboard-head-date input[type='text']:focus,
+		#panel-search-progression .search-form input.search-field:focus, blockquote.alignleft, blockquote.alignright, body .woocommerce-shop-single table.variations td.value select:focus, .woocommerce input:focus, #content-pro .woocommerce table.shop_table .coupon input#coupon_code:focus, body #content-pro .woocommerce table.shop_table input:focus, body #content-pro .woocommerce form.checkout.woocommerce-checkout input.input-text:focus, body #content-pro .woocommerce form.checkout.woocommerce-checkout textarea.input-text:focus, form.checkout.woocommerce-checkout input.input-text:focus, form#mc-embedded-subscribe-form  .mc-field-group input:focus, .wpcf7-form select:focus, blockquote, .post-password-form input:focus, .search-form input.search-field:focus, #respond textarea:focus, #respond input:focus, .wpcf7-form input:focus, .wpcf7-form textarea:focus,
+		.widget.widget_price_filter form .price_slider_wrapper .price_slider .ui-slider-handle {
+			border-color:#5c39f2;
+			outline:none;
+		}
+		body .woocommerce .woocommerce-MyAccount-content {
+			border-left-color:#5c39f2;
+		}
+		.widget.widget_price_filter form .price_slider_wrapper .price_slider .ui-slider-range {
+			background:#5c39f2;
+		}
+		.wp-block-button a.wp-block-button__link:hover,
+		.woocommerce form input.button:hover,
+		.woocommerce form input.woocommerce-Button:hover,
+		body #progression-checkout-basket a.cart-button-header-cart:hover, #boxed-layout-pro .woocommerce-shop-single .summary button.button:hover,
+		#boxed-layout-pro .woocommerce-shop-single .summary a.button:hover, .mc4wp-form input[type='submit']:hover, .progression-studios-blog-cat-overlay a, .progression-studios-blog-cat-overlay a:hover,
+		.sidebar ul.progression-studios-social-widget li a:hover,
+		footer#site-footer .tagcloud a:hover, .tagcloud a:hover, #boxed-layout-pro .woocommerce .shop_table input.button:hover, #boxed-layout-pro .form-submit input#submit:hover, #boxed-layout-pro #customer_login input.button:hover, #boxed-layout-pro .woocommerce-checkout-payment input.button:hover, #boxed-layout-pro button.button:hover, #boxed-layout-pro a.button:hover, .post-password-form input[type=submit]:hover, #respond input.submit:hover, .wpcf7-form input.wpcf7-submit:hover {
+			color:#ffffff;
+			background:#1e023d;
+		}
+		/* END BUTTON STYLES */
+
+		/* START Sticky Nav Styles */
+		.progression-sticky-scrolled #progression-studios-nav-bg,
+		.progression-studios-transparent-header .progression-sticky-scrolled #progression-studios-nav-bg,
+		.progression-studios-transparent-header .progression-sticky-scrolled header#masthead-pro, .progression-sticky-scrolled header#masthead-pro, #progression-sticky-header.progression-sticky-scrolled { background-color:rgba(38,85,193,0.7); }
+		body .progression-sticky-scrolled #logo-pro img {
+		}
+
+		/* END Sticky Nav Styles */
+		/* START Main Navigation Customizer Styles */
+		#progression-shopping-cart-count a.progression-count-icon-nav, nav#site-navigation { letter-spacing: 0.07em; }
+
+		.sf-menu li:after {
+			background-color:rgba(255,255,255,  0.08);
+			top:21px;
+			height:calc(29px);
+		}
+		#progression-inline-icons .progression-studios-social-icons a {
+			color:#ffffff;
+			padding-top:25px;
+			padding-bottom:25px;
+			font-size:18px;
+		}
+		.mobile-menu-icon-pro {
+			min-width:21px;
+			color:#ffffff;
+			padding-top:25px;
+			padding-bottom:23px;
+			font-size:21px;
+		}
+		.mobile-menu-icon-pro:hover, .active-mobile-icon-pro .mobile-menu-icon-pro {
+			color:#ffffff;
+		}
+		.mobile-menu-icon-pro span.progression-mobile-menu-text {
+			font-size:15px;
+		}
+		#progression-shopping-cart-count span.progression-cart-count {
+			top:27px;
+		}
+		#progression-shopping-cart-count a.progression-count-icon-nav i.shopping-cart-header-icon {
+			color:#ffffff;
+			padding-top:23px;
+			padding-bottom:23px;
+			font-size:25px;
+		}
+		.progression-sticky-scrolled #progression-shopping-cart-count a.progression-count-icon-nav i.shopping-cart-header-icon {
+			color:#ffffff;
+		}
+		.progression-sticky-scrolled  #progression-shopping-cart-count a.progression-count-icon-nav i.shopping-cart-header-icon:hover,
+		.progression-sticky-scrolled  .activated-class #progression-shopping-cart-count a.progression-count-icon-nav i.shopping-cart-header-icon,
+		#progression-shopping-cart-count a.progression-count-icon-nav i.shopping-cart-header-icon:hover,
+		.activated-class #progression-shopping-cart-count a.progression-count-icon-nav i.shopping-cart-header-icon {
+			color:#ffffff;
+		}
+		#progression-studios-header-login-container a.progresion-studios-login-icon {
+			color:#ffffff;
+			padding-top:15px;
+			padding-bottom:15px;
+			font-size:23px;
+		}
+		#progression-studios-header-search-icon i.pe-7s-search span, #progression-studios-header-login-container a.progresion-studios-login-icon span {
+			font-size:15px;
+		}
+		#progression-studios-header-login-container a.progresion-studios-login-icon i.fa-sign-in {
+			font-size:21px;
+		}
+
+		#progression-studios-header-search-icon i.pe-7s-search {
+			color:#ffffff;
+			padding-top:24px;
+			padding-bottom:24px;
+			font-size:23px;
+		}
+		.sf-menu a {
+			color:#ffffff;
+			padding-top:28px;
+			padding-bottom:28px;
+			font-size:15px;
+
+		}
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled  #progression-inline-icons .progression-studios-social-icons a,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled  #progression-inline-icons .progression-studios-social-icons a,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-studios-header-search-icon i.pe-7s-search,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-studios-header-login-container a.progresion-studios-login-icon,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu a,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-studios-header-search-icon i.pe-7s-search,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-studios-header-login-container a.progresion-studios-login-icon,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu a  {
+			color:#ffffff;
+		}
+
+			.sf-menu a:before {
+				background:rgba(255,255,255,  0.3);
+				margin-top:21px;
+			}
+			.sf-menu a:hover:before, .sf-menu li.sfHover a:before, .sf-menu li.current-menu-item a:before {
+				opacity:1;
+				background:rgba(255,255,255,  0.3);
+			}
+			.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu a:before,
+			.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu a:hover:before,
+			.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover a:before,
+			.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.current-menu-item a:before,
+
+			.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu a:before,
+			.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu a:hover:before,
+			.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover a:before,
+			.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.current-menu-item a:before {
+				background:rgba(255,255,255,  0.3);
+			}
+
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled  #progression-inline-icons .progression-studios-social-icons a:hover,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled  #progression-inline-icons .progression-studios-social-icons a:hover,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-studios-header-search-icon:hover i.pe-7s-search,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-studios-header-search-icon.active-search-icon-pro i.pe-7s-search,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-studios-header-login-container:hover a.progresion-studios-login-icon,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-studios-header-login-container.helpmeout-activated-class a.progresion-studios-login-icon,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-inline-icons .progression-studios-social-icons a:hover,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-shopping-cart-count a.progression-count-icon-nav:hover,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu a:hover,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover a,
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.current-menu-item a,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-studios-header-search-icon:hover i.pe-7s-search,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-studios-header-search-icon.active-search-icon-pro i.pe-7s-search,
+
+
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-studios-header-login-container:hover a.progresion-studios-login-icon,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-studios-header-login-container.helpmeout-activated-class a.progresion-studios-login-icon,
+
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-inline-icons .progression-studios-social-icons a:hover,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-shopping-cart-count a.progression-count-icon-nav:hover,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu a:hover,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover a,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.current-menu-item a,
+
+		#progression-studios-header-login-container:hover a.progresion-studios-login-icon, #progression-studios-header-login-container.helpmeout-activated-class a.progresion-studios-login-icon,
+
+		#progression-studios-header-search-icon:hover i.pe-7s-search, #progression-studios-header-search-icon.active-search-icon-pro i.pe-7s-search, #progression-inline-icons .progression-studios-social-icons a:hover, #progression-shopping-cart-count a.progression-count-icon-nav:hover, .sf-menu a:hover, .sf-menu li.sfHover a, .sf-menu li.current-menu-item a {
+			color:#ffffff;
+		}
+		ul#progression-studios-panel-login, #progression-checkout-basket, #panel-search-progression, .sf-menu ul {
+			background:rgba(17,0,35,  0.86);
+		}
+		#ratency-progression-header-top .sf-menu ul {border-top:3px solid #06d79c; }
+
+		#main-nav-mobile { background:rgba(17,0,35,  0.86); }
+		ul.mobile-menu-pro li a { color:#ffffff; }
+		ul.mobile-menu-pro li a {
+			letter-spacing:0.07em;
+		}
+		.sf-mega h2.mega-menu-heading:after {
+			background:#5c39f2;
+		}
+		ul#progression-studios-panel-login li a, .sf-menu li li a {
+			letter-spacing:0.07em;
+			font-size:14px;
+		}
+		#progression-checkout-basket .progression-sub-total {
+			font-size:14px;
+		}
+		ul#progression-studios-panel-login, #panel-search-progression input, #progression-checkout-basket ul#progression-cart-small li.empty {
+			font-size:14px;
+		}
+		ul#progression-studios-panel-login a,
+		.progression-sticky-scrolled #progression-checkout-basket, .progression-sticky-scrolled #progression-checkout-basket a, .progression-sticky-scrolled .sf-menu li.sfHover li a, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li a, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, #panel-search-progression .search-form input.search-field, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, .sf-menu li.sfHover.highlight-button li a, .sf-menu li.current-menu-item.highlight-button li a, .progression-sticky-scrolled #progression-checkout-basket a.checkout-button-header-cart:hover, #progression-checkout-basket a.checkout-button-header-cart:hover, #progression-checkout-basket, #progression-checkout-basket a, .sf-menu li.sfHover li a, .sf-menu li.sfHover li.sfHover li a, .sf-menu li.sfHover li.sfHover li.sfHover li a, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a {
+			color:rgba(255,255,255,  0.82);
+		}
+
+		.progression-sticky-scrolled ul#progression-studios-panel-login li a:hover, .progression-sticky-scrolled .sf-menu li li a:hover,  .progression-sticky-scrolled .sf-menu li.sfHover li a, .progression-sticky-scrolled .sf-menu li.current-menu-item li a, .sf-menu li.sfHover li a, .sf-menu li.sfHover li.sfHover li a, .sf-menu li.sfHover li.sfHover li.sfHover li a, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a {
+			background:none;
+		}
+		ul#progression-studios-panel-login a:hover,
+		.progression-sticky-scrolled #progression-checkout-basket a:hover, .progression-sticky-scrolled #progression-checkout-basket ul#progression-cart-small li h6, .progression-sticky-scrolled #progression-checkout-basket .progression-sub-total span.total-number-add, .progression-sticky-scrolled .sf-menu li.sfHover li a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover a, .progression-sticky-scrolled .sf-menu li.sfHover li li a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover a, .progression-sticky-scrolled .sf-menu li.sfHover li li li a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression-sticky-scrolled .sf-menu li.sfHover li li li li a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression-sticky-scrolled .sf-menu li.sfHover li li li li li a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li li a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li li li a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li li li li a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li li a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li li li a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li li li li a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li li li li li a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li li a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li li li a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li li li li li a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li li a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li li li a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li li li li a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li li li li li a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_navigation_color .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .sf-menu li.sfHover.highlight-button li a:hover, .sf-menu li.current-menu-item.highlight-button li a:hover, #progression-checkout-basket a.checkout-button-header-cart, #progression-checkout-basket a:hover, #progression-checkout-basket ul#progression-cart-small li h6, #progression-checkout-basket .progression-sub-total span.total-number-add, .sf-menu li.sfHover li a:hover, .sf-menu li.sfHover li.sfHover a, .sf-menu li.sfHover li li a:hover, .sf-menu li.sfHover li.sfHover li.sfHover a, .sf-menu li.sfHover li li li a:hover, .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .sf-menu li.sfHover li li li li a:hover, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .sf-menu li.sfHover li li li li li a:hover, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a {
+			color:#ffffff;
+		}
+
+		.progression_studios_force_dark_navigation_color .progression-sticky-scrolled #progression-shopping-cart-count span.progression-cart-count,
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled #progression-shopping-cart-count span.progression-cart-count,
+		#progression-shopping-cart-count span.progression-cart-count {
+			background:#ffffff;
+			color:#0a0715;
+		}
+		.progression-sticky-scrolled .sf-menu .progression-mini-banner-icon,
+		.progression-mini-banner-icon {
+			background:#ffffff;
+			color:#000000;
+		}
+		.progression-mini-banner-icon {
+			top:9px;
+			right:21px;
+		}
+		.sf-menu ul {
+			margin-left:14px;
+		}
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:hover:before,  .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:hover:before {
+			background:rgba(255,255,255,0);
+		}
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:hover, .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:hover, .sf-menu li.sfHover.highlight-button a, .sf-menu li.current-menu-item.highlight-button a, .sf-menu li.highlight-button a, .sf-menu li.highlight-button a:hover {
+			color:#ffffff;
+		}
+		.sf-menu li.highlight-button a:hover {
+			color:#ffffff;
+		}
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:before,  .progression_studios_force_dark_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:before, .sf-menu li.current-menu-item.highlight-button a:before, .sf-menu li.highlight-button a:before {
+			color:#ffffff;
+			background:rgba(255,255,255,0);
+			opacity:1;
+			width: 100%;
+			width: calc(100% - 12px);
+		}
+		span.progression-studios-nav-cat-count {
+			color:#ffffff;
+			background:rgba(255,255,255,  0.11);
+		}
+		.sf-menu ul span.progression-studios-nav-cat-count {
+			color:#ffffff;
+			background:rgba(255,255,255,  0.16);
+		}
+		.sf-menu li.highlight-button a:before {
+			border-color:rgba(255,255,255,0.3);
+		}
+		.sf-menu li.highlight-button a:hover:before {
+			border-color:rgba(255,255,255,0.7);
+		}
+		.progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.current-menu-item.highlight-button a:hover:before, .progression_studios_force_light_navigation_color .progression-sticky-scrolled .sf-menu li.highlight-button a:hover:before, .sf-menu li.current-menu-item.highlight-button a:hover:before, .sf-menu li.highlight-button a:hover:before {
+			background:rgba(255,255,255,0);
+			width: 100%;
+			width: calc(100% - 12px);
+		}
+		ul#progression-studios-panel-login li a, #progression-checkout-basket ul#progression-cart-small li, #progression-checkout-basket .progression-sub-total, #panel-search-progression .search-form input.search-field, .sf-mega li:last-child li a, body header .sf-mega li:last-child li a, .sf-menu li li a, .sf-mega h2.mega-menu-heading, .sf-mega ul, body .sf-mega ul, #progression-checkout-basket .progression-sub-total, #progression-checkout-basket ul#progression-cart-small li {
+			border-color:rgba(255,255,255,  0);
+		}
+		.sf-menu a:before {
+			margin-left:42px;
+		}
+		.sf-menu a:hover:before, .sf-menu li.sfHover a:before, .sf-menu li.current-menu-item a:before {
+		   width: calc(100% - 84px);
+		}
+		#progression-inline-icons .progression-studios-social-icons a {
+			padding-left:35px;
+			padding-right:35px;
+		}
+		#progression-inline-icons .progression-studios-social-icons {
+			padding-right:35px;
+		}
+		.sf-menu a {
+			padding-left:42px;
+			padding-right:42px;
+		}
+
+		.sf-menu li.highlight-button {
+			margin-right:35px;
+			margin-left:35px;
+		}
+		.sf-arrows .sf-with-ul {
+			padding-right:57px;
+		}
+		.sf-arrows .sf-with-ul:after {
+			right:51px;
+		}
+
+		.rtl .sf-arrows .sf-with-ul {
+			padding-right:42px;
+			padding-left:57px;
+		}
+		.rtl  .sf-arrows .sf-with-ul:after {
+			right:auto;
+			left:51px;
+		}
+
+		@media only screen and (min-width: 960px) and (max-width: 1300px) {
+			#page-title-pro {
+				padding-top:135px;
+				padding-bottom:135px;
+			}
+
+			#progression-studios-post-page-title {
+				padding-top:115px;
+				padding-bottom:110px;
+			}
+
+			.sf-menu ul {
+				margin-left:10px;
+			}
+			.sf-menu a:before {
+				margin-left:34px;
+			}
+			.sf-menu a:before, .sf-menu a:hover:before, .sf-menu li.sfHover a:before, .sf-menu li.current-menu-item a:before {
+			   width: calc(100% - 74px);
+			}
+			.sf-menu a {
+				padding-left:34px;
+				padding-right:34px;
+			}
+			.sf-arrows .sf-with-ul {
+				padding-right:52px;
+			}
+			.sf-arrows .sf-with-ul:after {
+				right:46px;
+			}
+		}
+
+		/* END Main Navigation Customizer Styles */
+		/* START Top Header Top Styles */
+		#ratency-progression-header-top {
+			font-size:13px;
+			display:none;
+		}
+		#ratency-progression-header-top .sf-menu a {
+			font-size:13px;
+		}
+		.progression-studios-header-left .widget, .progression-studios-header-right .widget {
+			padding-top:15px;
+			padding-bottom:14px;
+		}
+		#ratency-progression-header-top .sf-menu a {
+			padding-top:15px;
+			padding-bottom:15px;
+		}
+		#ratency-progression-header-top  .progression-studios-social-icons a {
+			font-size:13px;
+			min-width:14px;
+			padding:14px 12px;
+
+			color:#bbbbbb;
+			border-right:1px solid #585752;
+		}
+		#ratency-progression-header-top .progression-studios-social-icons a:hover {
+			color:#ffffff;
+		}
+		#ratency-progression-header-top  .progression-studios-social-icons a:nth-child(1) {
+			border-left:1px solid #585752;
+		}
+		#main-nav-mobile .progression-studios-social-icons a {
+			background:#444444;
+			color:#bbbbbb;
+		}
+		#ratency-progression-header-top a, #ratency-progression-header-top .sf-menu a, #ratency-progression-header-top {
+			color:#dddddd;
+		}
+		#ratency-progression-header-top a:hover, #ratency-progression-header-top .sf-menu a:hover, #ratency-progression-header-top .sf-menu li.sfHover a {
+			color:#ffffff;
+		}
+
+		#ratency-progression-header-top .sf-menu ul {
+			background:#ffffff;
+		}
+		#ratency-progression-header-top .sf-menu ul li a {
+			border-color:#e8e8e8;
+		}
+
+		.progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a, #ratency-progression-header-top .sf-menu li.sfHover li a, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li a, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li a, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li a, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li a {
+			color:#717171; }
+		.progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top  .sf-menu li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li li a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li li li a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li li li li a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_light_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top  .sf-menu li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li li a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li li li a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li li li li li a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, .progression_studios_force_dark_top_header_color #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, #ratency-progression-header-top .sf-menu li.sfHover li a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover a, #ratency-progression-header-top .sf-menu li.sfHover li li a:hover, #ratency-progression-header-top  .sf-menu li.sfHover li.sfHover li.sfHover a, #ratency-progression-header-top .sf-menu li.sfHover li li li a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a, #ratency-progression-header-top .sf-menu li.sfHover li li li li a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a, #ratency-progression-header-top .sf-menu li.sfHover li li li li li a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a:hover, #ratency-progression-header-top .sf-menu li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover li.sfHover a {
+			color:#99b4ee;
+		}
+		#ratency-progression-header-top {
+			background:#1e023d;
+		}
+		#ratency-progression-header-top .width-container-pro {
+			border-bottom:1px solid rgba(255,255,255, 0.11);
+		}
+		/* END Top Header Top Styles */
+		/* START FOOTER STYLES */
+		footer#site-footer {
+			background: #250a43;
+		}
+		#pro-scroll-top:hover {   color: #ffffff;    background: #5c39f2;  }
+		footer#site-footer #copyright-text {  color: #a5a0ad;}
+		footer#site-footer #progression-studios-copyright a {  color: #dddddd;}
+		footer#site-footer #progression-studios-copyright a:hover { color: #ffffff; }
+		#pro-scroll-top {  color:#ffffff;  background: rgba(100,100,100,  0.65);  }
+		#copyright-text { padding:45px 0px 50px 0px; }
+		#progression-studios-footer-logo { max-width:250px; padding-top:45px; padding-bottom:0px; padding-right:0px; padding-left:0px; }
+		/* END FOOTER STYLES */
+		@media only screen and (max-width: 767px) {
+			#masthead-pro .search-form {
+				display:none;
+			}
+			ul.progression-studios-header-social-icons li a {
+				margin-top:17px;
+				margin-bottom:23px;
+			}
+		}
+		@media only screen and (max-width: 959px) {
+			#page-title-pro {
+				padding-top:125px;
+				padding-bottom:125px;
+			}
+			#progression-studios-post-page-title {
+				padding-top:105px;
+				padding-bottom:100px;
+			}
+
+			 body.progression-studios-header-sidebar-before #progression-inline-icons .progression-studios-social-icons, body.progression-studios-header-sidebar-before:before, header#masthead-pro { background-color:#1e023d;
+		}
+			.progression-studios-transparent-header header#masthead-pro {
+
+				background-repeat: no-repeat; background-position:center center; background-size: cover;
+			}
+		}
+		@media only screen and (min-width: 960px) and (max-width: 1300px) {
+			#progression-shopping-cart-count a.progression-count-icon-nav {
+				margin-left:4px;
+			}
+			.width-container-pro {
+				width:94%;
+				padding:0px;
+			}
+			footer#site-footer.progression-studios-footer-full-width .width-container-pro,
+			.progression-studios-page-title-full-width #page-title-pro .width-container-pro,
+			.progression-studios-header-full-width #ratency-progression-header-top .width-container-pro {
+				width:94%;
+				padding:0px;
+			}
+			.progression-studios-header-full-width-no-gap.progression-studios-header-cart-width-adjustment header#masthead-pro .width-container-pro,
+			.progression-studios-header-full-width.progression-studios-header-cart-width-adjustment header#masthead-pro .width-container-pro {
+				width:98%;
+				margin-left:2%;
+				padding-right:0;
+			}
+			#ratency-progression-header-top ul .sf-mega,
+			header ul .sf-mega {
+				margin-right:0%;
+				width:100%;
+				left:0px;
+				margin-left:auto;
+			}
+		}
+		.progression-studios-spinner { border-left-color:#ededed;  border-right-color:#ededed; border-bottom-color: #ededed;  border-top-color: #cccccc; }
+		.sk-folding-cube .sk-cube:before, .sk-circle .sk-child:before, .sk-rotating-plane, .sk-double-bounce .sk-child, .sk-wave .sk-rect, .sk-wandering-cubes .sk-cube, .sk-spinner-pulse, .sk-chasing-dots .sk-child, .sk-three-bounce .sk-child, .sk-fading-circle .sk-circle:before, .sk-cube-grid .sk-cube{
+			background-color:#cccccc;
+		}
+		#page-loader-pro {
+			background:#ffffff;
+			color:#cccccc;
+		}
+
+		::-moz-selection {color:#ffffff;background:#5c39f2;}
+		::selection {color:#ffffff;background:#5c39f2;}
+
+	</style>
+	<link rel='stylesheet' id='elementor-icons-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.3.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-animations-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.6.4' type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-frontend-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.6.4' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-post-5-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/elementor/css/post-5.css?ver=1563472034' type='text/css' media='all' />
+	<link rel='stylesheet' id='boosted-elements-progression-frontend-styles-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/boosted-elements-progression/assets/css/frontend.min.css?ver=5.2.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='boosted-elements-progression-prettyphoto-optional-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/boosted-elements-progression/assets/css/prettyphoto.min.css?ver=5.2.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Share%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.2.2' type='text/css' media='all' />
+
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+
+	<link rel='https://api.w.org/' href='https://ratency.progressionstudios.com/wp-json/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ratency.progressionstudios.com/xmlrpc.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ratency.progressionstudios.com/wp-includes/wlwmanifest.xml" />
+
+	<link rel="canonical" href="https://ratency.progressionstudios.com/" />
+	<link rel='shortlink' href='https://ratency.progressionstudios.com/' />
+	<link rel="alternate" type="application/json+oembed" href="https://ratency.progressionstudios.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fratency.progressionstudios.com%2F" />
+	<link rel="alternate" type="text/xml+oembed" href="https://ratency.progressionstudios.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fratency.progressionstudios.com%2F&#038;format=xml" />
+	<style id="tt-easy-google-font-styles" type="text/css">
+		body,  body input, body textarea, select { }
+		h1 { text-decoration: none; }
+		h2 { text-decoration: none; }
+		h3 { text-decoration: none; }
+		h4 { text-decoration: none; }
+		h5 { text-decoration: none; }
+		h6 { text-decoration: none; }
+		#page-title-pro h1 { }
+		#page-title-pro h4 { }
+		#progression-studios-header-search-icon i.pe-7s-search span, #progression-studios-header-login-container a.progresion-studios-login-icon span, nav#site-navigation, nav#progression-studios-right-navigation { }
+		ul#progression-studios-panel-login, .sf-menu ul, #main-nav-mobile, ul.mobile-menu-pro li a { }
+		#ratency-progression-header-top { }
+		body #progression-sticky-header header ul.mobile-menu-pro h2.mega-menu-heading a,
+		body header ul.mobile-menu-pro .sf-mega h2.mega-menu-heading a, ul.mobile-menu-pro .sf-mega h2.mega-menu-heading a, ul.mobile-menu-pro .sf-mega h2.mega-menu-heading, .sf-mega h2.mega-menu-heading, body #progression-sticky-header header .sf-mega h2.mega-menu-heading a, body header .sf-mega h2.mega-menu-heading a { }
+		h2.progression-blog-title { }
+		.blog-meta-category-list a { }
+		.blog-meta-category-list a:hover { }
+		ul.progression-post-meta li, ul.progression-post-meta li a { }
+		ul.progression-post-meta li a:hover { }
+		.progression-studios-blog-excerpt { }
+		h2.overlay-progression-blog-title { }
+		.overlay-blog-meta-category-list a, .related-overlay-blog-meta-category-list span { }
+		.overlay-blog-meta-category-list a:hover { }
+		ul.progression-studio-overlay-post-meta li { }
+		.overlay-progression-studios-excerpt p { }
+		.sidebar h4.widget-title, .sidebar h2.widget-title { text-decoration: none; }
+		.sidebar { text-decoration: none; }
+		.sidebar a { text-decoration: none; }
+		.sidebar ul li.current-cat, .sidebar ul li.current-cat a, .sidebar a:hover { text-decoration: none; }
+		#reward_options input.button, input.wpneo-submit-campaign, input#wpneo_active_edit_form, .wpneo-buttons-group button#wpneo-edit, .wpneo-buttons-group button#wpneo-dashboard-btn-cancel, .wpneo-buttons-group button#wpneo-password-save, .wpneo-buttons-group button#wpneo-dashboard-save, .wpneo-buttons-group button#wpneo-contact-save, .wpneo-buttons-group button#wpneo-profile-save, button.wpneo_donate_button, .tagcloud a, body .woocommerce nav.woocommerce-MyAccount-navigation li.is-active a, .post-password-form input[type=submit], #respond input.submit, .wpcf7-form input.wpcf7-submit, #boxed-layout-pro .woocommerce .shop_table input.button, #boxed-layout-pro .form-submit input#submit, #boxed-layout-pro input.button, #boxed-layout-pro #customer_login input.button, #boxed-layout-pro .woocommerce-checkout-payment input.button, #boxed-layout-pro button.button, #boxed-layout-pro a.button { text-decoration: none; }
+		#progression-studios-post-page-title h1 { text-decoration: none; }
+		#progression-studios-post-page-title h4 { text-decoration: none; }
+		#progression-studios-post-category a { text-decoration: none; }
+		#progression-studios-post-category a:hover { text-decoration: none; }
+		ul.progression-studios-single-post-meta li a, ul.progression-studios-single-post-meta li { text-decoration: none; }
+		.progression-blog-review-content h2 { text-decoration: none; }
+	</style>
+</head>
+
+<body class="home page-template-default page page-id-5 elementor-default elementor-page elementor-page-5">
+<div id="boxed-layout-pro" class="progression-studios-search-icon-off progression-studios-header-full-width progression-studios-logo-position-left progression-studios-one-page-nav-off">
+	<div id="progression-studios-header-position">
+		<div id="ratency-progression-header-top" class="progression_studios_hide_top_left_bar progression_studios_hide_top_left_right">
+			<div class="width-container-pro">
+				<div class="progression-studios-header-left">
+					<div class="clearfix-pro"></div>
+				</div>
+				<div class="progression-studios-header-right">
+					<div class="clearfix-pro"></div>
+				</div>
+				<div class="clearfix-pro"></div>
+			</div>
+		</div><!-- close #header-top -->
+		<div id="progression-studios-header-width">
+			<header id="masthead-pro" class="progression-studios-site-header progression-studios-nav-center">
+                {% include "_templates/header_nav.html" %}
+			</header>
+		</div><!-- close #progression-studios-header-width -->
+	</div><!-- close #progression-studios-header-position -->
+
+	{% block contact_body %} {% endblock %}
+
+	<div id="content-pro">
+		<div class="width-container-pro">
+			<div id="post-5" class="post-5 page type-page status-publish hentry">
+				<div class="page-content-pro">
+					<div data-elementor-type="post" data-elementor-id="5" class="elementor elementor-5 elementor-bc-flex-widget" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+								<!-- TODO: davidgh This should be done for other views as well-->
+								{% block body %}Page Body{% endblock %}
+							</div>
+						</div>
+					</div>
+					<div class="clearfix-pro"></div>
+				</div><!-- .entry-content -->
+			</div><!-- #post-## -->
+			<div class="clearfix-pro"></div>
+		</div><!-- close .width-container-pro -->
+	</div><!-- #content-pro -->
+	{% include "_templates/footer.html" %}
+</div><!-- close #boxed-layout-pro -->
+<a href="#0" id="pro-scroll-top">Scroll to top</a>
+
+	<link rel='stylesheet' id='elementor-post-14-css'  href='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/elementor/css/post-14.css?ver=1563472035' type='text/css' media='all' />
+	<script type='text/javascript'>
+	/* <![CDATA[ */
+	var wpcf7 = {"apiSettings":{"root":"https:\/\/ratency.progressionstudios.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+	/* ]]> */
+	</script>
+
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.3'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/navigation.js?ver=20120206'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/scrolltofixed.js?ver=20120206'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/fitvids.js?ver=20120206'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/prettyphoto.js?ver=20120206'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/flexslider.js?ver=20120206'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/masonry.js?ver=20120206'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/themes/ratency-progression/js/script.js?ver=20120206'></script>
+	<script type='text/javascript'>
+			jQuery(document).ready(function($) { "use strict";
+
+				/* Default Isotope Load Code */
+				var $container = $(".progression-blog-index-masonry").isotope();
+				$container.imagesLoaded( function() {
+					$(".progression-masonry-item").addClass("opacity-progression");
+					$container.isotope({
+						itemSelector: ".progression-masonry-item",
+						percentPosition: true,
+						layoutMode: "fitRows"
+			 		});
+				});
+				/* END Default Isotope Code */
+		});
+
+	</script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=5.2.2'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=2.6.4'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.3'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'></script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6'></script>
+	<script type='text/javascript'>
+		var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.6.4","urls":{"assets":"https:\/\/ratency.progressionstudios.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_enable_lightbox_in_editor":"yes"}},"post":{"id":5,"title":"Home","excerpt":""}};
+	</script>
+	<script type='text/javascript' src='https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.6.4'></script>
+	<script type="text/javascript">
+		(function() {
+		  var t   = document.createElement( 'script' );
+		  t.type  = 'text/javascript';
+		  t.async = true;
+		  t.id    = 'gauges-tracker';
+		  t.setAttribute( 'data-site-id', '5a53e802ba4ae36c10008da2' );
+		  t.src = '//secure.gaug.es/track.js';
+		  var s = document.getElementsByTagName( 'script' )[0];
+		  s.parentNode.insertBefore( t, s );
+		})();
+	  </script>
+</body>
+</html>
