@@ -20,22 +20,32 @@ def index(request):
 
 def tv_series(request):
     genres = Genre.objects.all()
-    return render(request, 'tv_series.html', {'genres': genres})
+    amount = Movie.objects.all().count
+    return render(request, 'tv_series.html', {'genres': genres, 'amount': amount})
 
 
 def top_watched(request):
     genres = Genre.objects.all()
-    return render(request, 'top_watched.html', {'genres': genres})
+    amount = len(Movie.objects.all())
+    return render(request, 'top_watched.html', {'genres': genres, 'amount': amount})
 
 
 def top_imdb(request):
     genres = Genre.objects.all()
-    return render(request, 'top_imdb.html', {'genres': genres})
+    amount = Movie.objects.all().count
+    return render(request, 'top_imdb.html', {'genres': genres, 'amount': amount})
 
 
 def contact(request):
     genres = Genre.objects.all()
-    return render(request, 'contact.html', {'genres': genres})
+    amount = Movie.objects.all().count
+    return render(request, 'contact.html', {'genres': genres, 'amount': amount})
 
+
+def get_movie_by_id(request):
+
+    #id = request.GET.get()
+
+    return "VALODIK"
 
 

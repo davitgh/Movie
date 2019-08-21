@@ -12,15 +12,20 @@
                                         <div id="progression-review-index-masonry-b6b1a9d">
 
                                             {% for movie in movies %} <!-- TODO: Davidgh: Should be updated from database -->
+
                                             <div class="progression-masonry-item gaming">
                                                 <div class="progression-masonry-padding-blog">
                                                     <div class="progression-studios-isotope-animation">
                                                         <div id="post-127" class="post-127 post type-post status-publish format-standard has-post-thumbnail hentry category-gaming">
                                                             <div class="progression-studios-default-blog-overlay  ">
                                                                 <div class="overlay-blog-meta-category-list">
-                                                                    <a href="https://ratency.progressionstudios.com/category/gaming/" rel="category tag">{{ movie.genre }}</a>
+                                                                    <a href="/movies/{{genre.id}}" rel="category tag">{{ movie.genre }}</a><!-- TODO: Should be fixed the genre.id -->
                                                                 </div>
-                                                                <a href="https://ratency.progressionstudios.com/2018/01/best-mobile-phone-game/">
+                                                                <a href="/movie/{{movie.id}}">
+                                                                <!--
+                                                                    TODO: 1: Davidgh: dhould be corrected BE to open the correct movie page
+                                                                    TODO: 2: Davidgh: Should be created BE /movie/{id}
+                                                                -->
                                                                     <div class="overlay-progression-studios-blog-image" style="background-image:url('{{ movie.img_url }}')"></div>
                                                                     <div class="overlay-progression-blog-content">
                                                                         <div class="overlay-progression-blog-content-table-cell">
@@ -44,6 +49,7 @@
                                                     </div><!-- close .progression-studios-isotope-animation -->
                                                 </div><!-- close .progression-masonry-padding-blog -->
                                             </div><!-- close .progression-masonry-item -->
+
                                             {% endfor %}
 
                                         </div><!-- close #progression-review-index-masonry-b6b1a9d  -->
