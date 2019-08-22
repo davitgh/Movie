@@ -42,10 +42,9 @@ def contact(request):
     return render(request, 'contact.html', {'genres': genres, 'amount': amount})
 
 
-def get_movie_by_id(request):
-
-    #id = request.GET.get()
-
-    return "VALODIK"
-
+def get_movie_by_id(request, id=1):
+    genres = Genre.objects.all()
+    amount = Movie.objects.all().count
+    movie = Movie.objects.get(pk=id)
+    return render(request, 'movie.html', {'genres': genres, 'amount': amount, 'movie': movie})
 

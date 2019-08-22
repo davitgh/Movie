@@ -26,5 +26,5 @@ urlpatterns = [
     path('top_watched/', views.top_watched),
     path('top_imdb/', views.top_imdb),
     path('', views.index),
-    path('/movie/{id}', views.get_movie_by_id)
+    path('movie/<int:id>/', views.get_movie_by_id)
 ]
