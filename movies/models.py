@@ -26,8 +26,22 @@ class Movie(models.Model):
 
 
 class Slider(models.Model):
-    slider_movies = models.CharField(max_length=100)
+    slider_movies = models.IntegerField()
 
     def __str__(self):
         return self.slider_movies
+
+
+class Popular(models.Model):
+    popular_movies = models.IntegerField()
+
+    def __str__(self):
+        return self.popular_movies
+
+
+class EditorsChoice(models.Model):
+    editors_movies = models.IntegerField()
+
+    def __str__(self):
+        return self.editors_movies
 

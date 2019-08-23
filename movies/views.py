@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Genre, Movie, Slider
+from .models import Genre, Movie, Slider, EditorsChoice, Popular
 from django.core.paginator import Paginator
 
 
@@ -14,11 +14,20 @@ def index(request):
     paginator = Paginator(movies, 9)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
-    slides = Slider.objects.get(pk=1).slider_movies
-#    for i in range(1, 10):
-#        print(i + " : " + slides[i]) #slides.append(Movie.objects.get(pk=i))
+    slides = Slider.objects.all()
 
-    return render(request, 'index.html', {'movies': movies, 'items': items, 'genres': genres, 'amount': amount})
+    slider_movies = []
+    for slide in slides:
+        slider_movies.append(Movie.objects.get(pk=slide.slider_movies))
+
+    popular_movies = []
+    for popular in Popular.objects.all():
+        popular_movies.append(Movie.objects.get(pk=popular.popular_movies))
+
+    editors_movies = []
+    for editors in EditorsChoice.objects.all():
+        editors_movies.append(Movie.objects.get(pk=editors.editors_movies))
+    return render(request, 'index.html', {'movies': movies, 'populars': popular_movies, 'editors_movies': editors_movies, 'genres': genres, 'amount': amount, 'slider': slider_movies})
 
 
 def tv_series(request):

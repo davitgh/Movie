@@ -23,7 +23,7 @@
                                     <div class="progression-masonry-margins">
                                         <div id="progression-review-index-masonry-79ad004">
 
-                                            {% for item in items %} <!-- TODO: Davidgh: Should be updated from database -->
+                                            {% for item in populars %} <!-- TODO: Davidgh: Should be updated from database -->
                                             <div class="progression-masonry-item gaming">
                                                 <div class="progression-masonry-padding-blog">
                                                     <div class="progression-studios-isotope-animation">
@@ -33,11 +33,13 @@
                                                                     <div class="progression-studios-image-float-left">
                                                                         <div class="progression-studios-feaured-image">
                                                                             <a href="https://ratency.progressionstudios.com/2018/01/best-mobile-phone-game/">
-                                                                                <img width="700" height="460" src="https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/koby-kelsey-435467-700x460.jpg" class="attachment-progression-studios-blog-left-align size-progression-studios-blog-left-align wp-post-image" alt="" />																<div class="progression-studios-hexagon-index-container">
-                                                                                <div class="progression-studios-index-hexagon-border">
-                                                                                    <div class="progression-blog-review-index-total">8.5</div>
+                                                                                <!-- TODO: Should be added w=700,h=460 image links here -->
+                                                                                <img width="700" height="460" src="{{item.img_url}}" class="attachment-progression-studios-blog-left-align size-progression-studios-blog-left-align wp-post-image" alt="{{item.name}}" />
+                                                                                <div class="progression-studios-hexagon-index-container">
+                                                                                    <div class="progression-studios-index-hexagon-border">
+                                                                                        <div class="progression-blog-review-index-total">{{item.rating}}</div>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
                                                                             </a>
                                                                         </div><!-- close .progression-studios-feaured-image -->
                                                                         <!-- close video -->
@@ -48,11 +50,11 @@
                                                                                 <a href="https://ratency.progressionstudios.com/category/gaming/" rel="category tag">Trailer</a>
                                                                                 <a href="https://ratency.progressionstudios.com/category/gaming/" rel="category tag">Movie</a>
                                                                             </div>
-                                                                            <h2 class="progression-blog-title"><a href="https://ratency.progressionstudios.com/2018/01/best-mobile-phone-game/">Best Mobile Phone Game</a></h2>
+                                                                            <h2 class="progression-blog-title"><a href="/movie/{{item.id}}">{{item.name}}</a></h2>
                                                                             <ul class="progression-post-meta"></ul>
                                                                             <div class="clearfix-pro"></div>
                                                                             <div class="progression-studios-blog-excerpt">
-                                                                                <p>Add-in an optional excerpt to describe your review. Lorem Ipsum is the standard dummy text.</p>
+                                                                                <p>{{item.description|truncatechars:90}}</p>
                                                                                 <div class="clearfix-pro"></div>
                                                                                 <div class="clearfix-pro"></div>
                                                                             </div>
@@ -117,7 +119,7 @@
                                     <div class="progression-masonry-margins">
                                         <div id="progression-review-index-masonry-8496b41">
 
-                                            {% for item in items %}<!-- TODO: Davidgh: Should be updated from database -->
+                                            {% for item in editors_movies %}<!-- TODO: Davidgh: Should be updated from database -->
 
                                             <div class="progression-masonry-item  editors-choice slider  gaming">
                                                 <div class="progression-masonry-padding-blog">
@@ -131,7 +133,7 @@
                                                                                 <img width="700" height="460" src="https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/nikita-kachanovsky-405700-700x460.jpg" class="attachment-progression-studios-blog-left-align size-progression-studios-blog-left-align wp-post-image" alt="" />
                                                                                 <div class="progression-studios-hexagon-index-container">
                                                                                 <div class="progression-studios-index-hexagon-border">
-                                                                                    <div class="progression-blog-review-index-total">8.5</div>
+                                                                                    <div class="progression-blog-review-index-total">{{item.rating}}</div>
                                                                                 </div>
                                                                             </div>
                                                                             </a>
@@ -146,11 +148,11 @@
                                                                             </div>
 
 
-                                                                            <h2 class="progression-blog-title"><a href="https://ratency.progressionstudios.com/2018/01/new-console-arrives-on-the-market/">New Console Arrives</a></h2>
+                                                                            <h2 class="progression-blog-title"><a href="/movie/{{item.id}}">{{item.name}}</a></h2>
                                                                             <ul class="progression-post-meta"></ul>
                                                                             <div class="clearfix-pro"></div>
                                                                             <div class="progression-studios-blog-excerpt">
-                                                                                <p>Add-in an optional excerpt to describe your review. Lorem Ipsum is the standard dummy text.</p>
+                                                                                <p>{{item.description|truncatechars:90}}</p>
                                                                                 <div class="clearfix-pro"></div>
                                                                                 <div class="clearfix-pro"></div>
                                                                             </div>

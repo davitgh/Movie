@@ -12,11 +12,14 @@
 
 +-----------------------------------+ 23/Aug/2019
          1. Update FE/BE of main slider
-            - Create DB of main slider
-            - Update FE according to BE
++ Done!     - Create DB of main slider
++ Done!     - Update FE according to BE
+            - Update Image views for this one
          2. Keep only 1 Genre in Movie view
-         3. Create BE/FE of What's Popular
-         4. Create BE/FE of Editor's Choice
++ Done!  3. Create BE of What's Popular
+         3.1. Create FE of What's Popular
++ Done!  4. Create BE of Editor's Choice
+         4.1 Create FE of Editor's Choice
          5. Update Footer
 + Done!  6. Delete #! from Genre/Navigation Press # 22/Aug/2019
          7. Create TV Series page

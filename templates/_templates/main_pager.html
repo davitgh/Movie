@@ -11,7 +11,7 @@
 
                                         <ul class="slides">
 
-                                            {% for movie in movies %}
+                                            {% for movie in slider %}
                                             <li class="progression_animate_up">
                                                 <div class="progression-elements-slider-background" style="background-image:url('{{ movie.img_url }}')">
                                                     <div class="progression-ratency-slider-elements-display-table">
@@ -31,7 +31,7 @@
                                                                                         <a href="https://ratency.progressionstudios.com/category/technology/" rel="category tag">Trailer</a>
                                                                                         <a href="https://ratency.progressionstudios.com/category/technology/" rel="category tag">Movie</a>
                                                                                     </div>
-                                                                                    <a href="https://ratency.progressionstudios.com/2018/01/best-iphone-camera-app/">
+                                                                                    <a href="/movie/{{ movie.id }}">
                                                                                         <h2 class="progression-ratency-progression-slider-title">{{ movie.name }}</h2>
                                                                                         <div class="progression-ratency-slider-excerpt">
                                                                                             <p>{{ movie.description }}</p>
@@ -63,11 +63,11 @@
                                             <div id="progression-elements-progression-flexslider-carousel-8550408" class="flexslider">
                                                 <ul class="slides">
 
-                                                    {% for movie in movies %}
+                                                    {% for movie in slider %}
                                                     <li class="noselect">
                                                         <div class="progression-ratency-slider-thumb-container">
                                                             <div class="progression-ratency-slider-thumb-image">
-                                                                <img width="300" height="200" src="{{ movie.img_url }}" class="attachment-progression-studios-slider-thumb size-progression-studios-slider-thumb wp-post-image" alt="" srcset="https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-300x200.jpg 300w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-768x513.jpg 768w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-1024x684.jpg 1024w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-900x601.jpg 900w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242.jpg 1400w " sizes="(max-width: 300px) 100vw, 300px" />
+                                                                <img width="300" height="200" src="{{ movie.img_url }}" class="attachment-progression-studios-slider-thumb size-progression-studios-slider-thumb wp-post-image" alt="{{movie.name}}" srcset="https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-300x200.jpg 300w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-768x513.jpg 768w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-1024x684.jpg 1024w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242-900x601.jpg 900w , https://qpi55pgc3otk1j4m-zippykid.netdna-ssl.com/wp-content/uploads/2018/01/callie-morgan-285242.jpg 1400w " sizes="(max-width: 300px) 100vw, 300px" />
                                                                 <div class="progression-ratency-slider-thumb-review"></div>
                                                             </div>
                                                             <div class="progression-ratency-slider-thumb-caption">
