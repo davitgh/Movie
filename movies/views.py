@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Genre, Movie
+from .models import Genre, Movie, Slider
 from django.core.paginator import Paginator
 
 
@@ -14,6 +14,9 @@ def index(request):
     paginator = Paginator(movies, 9)
     page = request.GET.get('page')
     movies = paginator.get_page(page)
+    slides = Slider.objects.get(pk=1).slider_movies
+#    for i in range(1, 10):
+#        print(i + " : " + slides[i]) #slides.append(Movie.objects.get(pk=i))
 
     return render(request, 'index.html', {'movies': movies, 'items': items, 'genres': genres, 'amount': amount})
 

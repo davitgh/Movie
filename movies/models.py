@@ -24,4 +24,10 @@ class Movie(models.Model):
     def __str__(self):
         return self.name, self.release_date
 
-#class Slider(models.Model):
+
+class Slider(models.Model):
+    slider_movies = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.slider_movies
+
