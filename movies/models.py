@@ -24,3 +24,4 @@ class Movie(models.Model):
     def __str__(self):
         return self.name, self.release_date
 
+#class Slider(models.Model):

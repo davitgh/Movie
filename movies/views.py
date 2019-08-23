@@ -33,7 +33,8 @@ def top_watched(request):
 def top_imdb(request):
     genres = Genre.objects.all()
     amount = Movie.objects.all().count
-    return render(request, 'top_imdb.html', {'genres': genres, 'amount': amount})
+    items = range(1, 5)
+    return render(request, 'top_imdb.html', {'genres': genres, 'amount': amount, 'items': items})
 
 
 def contact(request):

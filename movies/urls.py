@@ -15,9 +15,9 @@ Including another URLconf
 """
 
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 from . import views
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +28,5 @@ urlpatterns = [
     path('', views.index),
     path('movie/<int:id>/', views.get_movie_by_id)
 ]
+
+urlpatterns += staticfiles_urlpatterns()

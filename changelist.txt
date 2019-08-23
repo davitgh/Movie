@@ -1,0 +1,28 @@
++-----------------------------------+ 22/Aug/2019
+1. Added BE of movie/<int:id>
+2. Added FE of movie/<int:id>
+3. python manage.py loaddata DB.json
+4. Added Video Player for Youtube
++-----------------------------------+
+
+    cd projectfolder
+    git add *
+    git commit -m "update v1.0"
+    git push origin master
+
++-----------------------------------+ 23/Aug/2019
+         1. Update FE/BE of main slider
+            - Create DB of main slider
+            - Update FE according to BE
+         2. Keep only 1 Genre in Movie view
+         3. Create BE/FE of What's Popular
+         4. Create BE/FE of Editor's Choice
+         5. Update Footer
++ Done!  6. Delete #! from Genre/Navigation Press # 22/Aug/2019
+         7. Create TV Series page
+         8. Create TOP Watched page
+         9. Create TOP IMDB page
+        10. Clean-up Contact Page
+        11. Add Login/Logout/SearchBox buttons in Navigation
+
+
