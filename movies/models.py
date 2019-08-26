@@ -24,6 +24,9 @@ class Movie(models.Model):
     def __str__(self):
         return self.name, self.release_date
 
+    def get_first_genre(self):
+        return self.genre.split(',')[0]
+
 
 class Slider(models.Model):
     slider_movies = models.IntegerField()

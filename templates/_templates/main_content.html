@@ -19,7 +19,7 @@
                                                         <div id="post-127" class="post-127 post type-post status-publish format-standard has-post-thumbnail hentry category-gaming">
                                                             <div class="progression-studios-default-blog-overlay  ">
                                                                 <div class="overlay-blog-meta-category-list">
-                                                                    <a href="/movies/{{genre.id}}" rel="category tag">{{ movie.genre }}</a><!-- TODO: Should be fixed the genre.id -->
+                                                                    <a href="/movies/{{genre.id}}" rel="category tag">{{ movie.get_first_genre }}</a><!-- TODO: Should be fixed the genre.id -->
                                                                 </div>
                                                                 <a href="/movie/{{movie.id}}">
                                                                 <!--

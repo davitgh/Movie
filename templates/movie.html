@@ -5,7 +5,7 @@
 {% block contact_body %}
 
 		<div id="progression-studios-post-page-title">
-			<div id="progression-studios-post-category"><a href="/" rel="category tag">{{ movie.genre }}</a></div>
+			<div id="progression-studios-post-category"><a href="/" rel="category tag">{{ movie.get_first_genre }}</a></div>
 			<h1 class="progression-post-single-title">{{ movie.name }}</h1>
 			<h4><p>{{ movie.description }}</p></h4>
 			<ul class="progression-studios-single-post-meta">
@@ -114,7 +114,9 @@
 									</div>
 									<ul class="progression-author-icons">
 										<li><a href="https://www.facebook.com/progressionstudios/" target="_blank" class="facebook-pro"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-										<li><a href="http://twitter.com/progression_s" target="_blank" class="twitter-pro"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>																								<li><a href="https://www.youtube.com/channel/UC4bC_uGGyczKIoB_4BNVXfQ" target="_blank" class="youtube-pro"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>																			</ul>
+										<li><a href="http://twitter.com/progression_s" target="_blank" class="twitter-pro"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+										<li><a href="https://www.youtube.com/channel/UC4bC_uGGyczKIoB_4BNVXfQ" target="_blank" class="youtube-pro"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>
+									</ul>
 								</div>
 								<div class="clearfix-pro"></div>
 							</div>

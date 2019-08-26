@@ -15,7 +15,7 @@
 + Done!     - Create DB of main slider
 + Done!     - Update FE according to BE
             - Update Image views for this one
-         2. Keep only 1 Genre in Movie view
++ Done!  2. Keep only 1 Genre in Movie view  25/Aug/2019
 + Done!  3. Create BE of What's Popular
          3.1. Create FE of What's Popular
 + Done!  4. Create BE of Editor's Choice
@@ -26,6 +26,9 @@
          8. Create TOP Watched page
          9. Create TOP IMDB page
         10. Clean-up Contact Page
+
+
+Stage 2:
         11. Add Login/Logout/SearchBox buttons in Navigation
 
 
