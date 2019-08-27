@@ -5,9 +5,9 @@
 {% block contact_body %}
 
 		<div id="progression-studios-post-page-title">
-			<div id="progression-studios-post-category"><a href="/" rel="category tag">{{ movie.genre }}</a></div>
+			<div id="progression-studios-post-category"><a href="/" rel="category tag">{{ movie.get_first_genre }}</a></div>
 			<h1 class="progression-post-single-title">{{ movie.name }}</h1>
-			<h4><p>{{ movie.description }}</p></h4>
+			<h4><p>{{ movie.description|truncatechars:200 }}</p></h4>
 			<ul class="progression-studios-single-post-meta">
 				<li class="blog-meta-author-display">By <a href="https://ratency.progressionstudios.com/author/ratency/">{{ movie.director }}</a></li><!-- TODO: Davidgh : Should be added director's DB and setup BE -->
 				<li class="blog-meta-date-list">{{ movie.release_date }}</li>
@@ -49,7 +49,7 @@
 									</div>
 									<div id="full-movie" style="display: block; ">
 										<video width="1200" height="675" style="max-width: 100%" controls playsinline preload="metadata">
-											<source src="/static/test_video.mp4" type="video/mp4"/>
+											<source src="{{ movie.video_url }}" type="video/mp4"/>
 										</video>
 									</div>
 								</div>

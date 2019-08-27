@@ -27,7 +27,6 @@
          9. Create TOP IMDB page
         10. Clean-up Contact Page
 
-
 Stage 2:
         11. Add Login/Logout/SearchBox buttons in Navigation
 
